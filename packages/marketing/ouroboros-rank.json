@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Rank by Ouroboros",
+  "packageName": "@toolsdk-remote/ouroboros-rank",
+  "description": "Read-only Google Search Console answers for AI assistants: verified properties, top queries and pages, performance trends, period comparisons, high-impression low-CTR quick wins, dropped pages, and URL Inspection status. Every metric comes from the Search Console API. Tools: list_properties, top_queries, top_pages, performance_trends, compare_periods, quick_wins, dropped_pages, inspect_url, account_status. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/rank. Published in the Official MCP Registry as io.github.LAHutchins91/rank. Made by Ouroboros Apps (https://ouroborosapps.com).",
+  "url": "https://github.com/LAHutchins91/rank-mcp",
+  "readme": "https://github.com/LAHutchins91/rank-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://rank.ouroborosapps.com/logo.jpg",
+  "author": "Ouroboros",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rank.ouroborosapps.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
